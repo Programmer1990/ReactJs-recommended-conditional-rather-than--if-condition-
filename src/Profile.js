@@ -2,12 +2,15 @@
  import React from "react";
 import { useState } from "react/cjs/react.development";
 function Profile(){
-    const [loggedIn, setLoggedIn]= useState(true)
+    const [loggedIn, setLoggedIn]= useState(3)
    
     
     return( 
         <div>
-        {loggedIn?<h1>Welcome Narinder</h1>:<h2>Welcome Guest</h2>}
+            {loggedIn==1?
+            <h1>welcome User1</h1>
+        :loggedIn==2?<h1>Welcome Narinder</h1>
+        :<h1>Welcome Guest</h1>}
         </div>
     )
 
